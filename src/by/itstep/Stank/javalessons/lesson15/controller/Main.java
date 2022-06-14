@@ -25,8 +25,8 @@ public class Main {
         int maxPrice = CarManager.findExpensiveCar(car1, car2, car3, car4);
         int total = CarManager.calculateTotalPrice(car1, car2, car3, car4);
 
-        String msg = String.format("max price = %d",maxPrice);
-        msg += String.format("Total = $%d", total);
+        String msg = String.format(" max price = %d",maxPrice);
+        msg += String.format(" Total = $%d", total);
 
         ConsolePrinter printer= new ConsolePrinter();
         printer.print(msg);

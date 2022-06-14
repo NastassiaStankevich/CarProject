@@ -24,10 +24,8 @@ public class CarManager {
 
     public static int calculateTotalPrice(Car car1, Car car2,
                                           Car car3, Car car4) {
-
-
+        return car1.price+ car2.price + car3.price + car4.price;
     }
-
 
 }
 
