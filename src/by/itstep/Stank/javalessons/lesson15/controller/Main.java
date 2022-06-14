@@ -6,6 +6,18 @@ import by.itstep.Stank.javalessons.lesson15.view.ConsolePrinter;
 
 public class Main {
     public static void main(String[] args) {
+
+        Car[] cars= new Car[5];
+
+        String[] strings = new String[5];
+
+        Integer in;
+        int [] numbers = new int[10];
+
+        boolean[] flags = new boolean[10];
+
+
+
         Car car1 =new Car();
         car1.name = "ford";
         car1.price = 3000;
@@ -22,8 +34,8 @@ public class Main {
         car4.name = "fiat";
         car4.price = 5450;
 
-        int maxPrice = CarManager.findExpensiveCar(car1, car2, car3, car4);
-        int total = CarManager.calculateTotalPrice(car1, car2, car3, car4);
+        int maxPrice = CarManager.findExpensiveCar(cars);
+        int total = CarManager.calculateTotalPrice(cars);
 
         String msg = String.format(" max price = %d",maxPrice);
         msg += String.format(" Total = $%d", total);
